@@ -153,6 +153,7 @@ class DrawingApp:
             self.text_mode = False
             self.canvas.unbind('<Button-1>')
     def change_background_color(self):
+        '''Метод изменяет цвет фона'''
         new_color = colorchooser.askcolor(color='white')[1]
         if new_color:
             self.canvas.config(background=new_color)
